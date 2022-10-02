@@ -1,5 +1,5 @@
 <div class="container">
-    <app-username></app-username>
+    <app-username (userNameEvent)="userNameUpdate($event)" *ngIf="!userName"></app-username>
     <h1>Chat App - Philip Modinos</h1>
     <div class="chatbox">
         <div class="chatbox__user-list">
@@ -10,7 +10,7 @@
         </div>
         <div class="messages_list">
             <div class="chatbox__messages">
-                
+
             </div>
         </div>
     </div>
