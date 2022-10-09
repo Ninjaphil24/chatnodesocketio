@@ -50,5 +50,5 @@ function removeUser(userName, id) {
 }
 
 http.listen(process.env.PORT || 3000,()=>{
-    console.log('Server is running ${process.env.PORT || 3000}')
+    console.log(`Server is running ${process.env.PORT || 3000}`)
 })
