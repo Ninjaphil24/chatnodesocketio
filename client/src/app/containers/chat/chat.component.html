@@ -5,7 +5,7 @@
         <div class="chatbox__user-list">
             <h2>User list</h2>
             <div class="chatbox__user--active"  *ngFor="let user of userList">
-                <p></p>
+                <p>{{ user }}</p>
             </div>
         </div>
         <div class="messages_list">
@@ -20,6 +20,8 @@
             </div>
         </div>
     </div>
-    <input type="text" [(ngModel)]="message">
-    <button (click)="sendMessage()">Send</button>
+    <div class="send-message">
+        <input type="text" [(ngModel)]="message">
+        <button (click)="sendMessage()">Send</button>
+    </div>
 </div>
